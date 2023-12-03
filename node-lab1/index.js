@@ -2,7 +2,6 @@
 import http from 'http';
 import dotenv from 'dotenv';
 import greeting from './greeting.js';
-import '../tasky-api/db/index.js';
 
 dotenv.config();
 const port = process.env.PORT;
