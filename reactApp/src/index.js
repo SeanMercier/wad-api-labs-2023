@@ -7,6 +7,8 @@ import MoviesPage from "./pages/moviesPage";
 import { QueryClientProvider, QueryClient } from "react-query";
 import LoginPage from "./pages/loginPage";
 import AuthContextProvider from "./contexts/authContext";
+import SignUpPage from "./pages/signUpPage";
+
 
 import ProtectedRoutes from "./protectedRoutes";
 
@@ -44,6 +46,7 @@ const App = () => {
               <Route path="/profile" element={<ProfilePage />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/signup" element={ <SignUpPage /> } />
           </Routes>
         </AuthContextProvider>
       </BrowserRouter>
